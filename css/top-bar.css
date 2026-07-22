@@ -1,0 +1,36 @@
+/* ============================
+        TOP BAR
+============================ */
+
+.top-bar {
+
+    background: var(--bg-light);
+    border-bottom: .0625rem solid var(--border-color);
+    padding: .75rem 0;
+    font-size: .875rem;
+
+}
+
+.top-bar-left {
+
+    color: var(--gray-color);
+    gap: .5rem;
+
+}
+
+.top-bar-right {
+
+    gap: 1.5rem;
+
+}
+
+.top-bar-right a {
+    color: var(--gray-color);
+    transition: var(--transition);
+}
+
+.top-bar-right a:hover {
+
+    color: var(--primary-color);
+
+}

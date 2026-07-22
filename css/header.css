@@ -1,0 +1,140 @@
+/* ===========================
+        MAIN HEADER
+=========================== */
+
+.main-header {
+
+    padding: 1.5rem 0;
+    background: var(--white-color);
+
+}
+
+.logo {
+
+    max-width: 12rem;
+
+}
+
+.search-form .input-group {
+
+    height: 3rem;
+
+}
+
+.input-group-text {
+
+    background: var(--white-color);
+    border-right: none;
+
+}
+
+.form-control {
+
+    border-left: none;
+    box-shadow: none;
+
+}
+
+.form-control:focus {
+
+    box-shadow: none;
+    border-color: var(--border-color);
+
+}
+
+.search-btn {
+    padding: 0 2rem;
+
+    background: var(--primary-color);
+    color: var(--white-color);
+
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+
+    background: var(--primary-hover);
+    color: var(--white-color);
+
+}
+
+.header-icons {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.header-icons i {
+
+    font-size: 1.5rem;
+    color: var(--dark-color);
+
+}
+
+.divider {
+
+    width: .0625rem;
+    height: 2rem;
+    background: var(--border-color);
+
+}
+
+.cart {
+
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: var(--dark-color);
+
+}
+
+.cart small {
+
+    display: block;
+    color: var(--gray-color);
+
+}
+
+.cart span {
+
+    font-weight: 600;
+
+}
+
+/* ===========================
+        COMMON CLASSES
+=========================== */
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.green-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: .875rem 2rem;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    border-radius: var(--radius-pill);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.green-btn:hover {
+    background-color: var(--primary-hover);
+}

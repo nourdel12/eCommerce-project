@@ -1,0 +1,120 @@
+/* ============================
+        CSS VARIABLES
+============================ */
+
+:root {
+
+    /* Colors */
+    --primary-color: #00B207;
+    --primary-hover: #2C742F;
+
+    --dark-color: #1A1A1A;
+    --gray-color: #666666;
+    --light-gray: #999999;
+
+    --white-color: #FFFFFF;
+    --bg-light: #F7F7F7;
+    --navbar-bg: #333333;
+    --border-color: #E6E6E6;
+
+    /* Typography */
+    --font-family: "Poppins", sans-serif;
+
+    /* Border Radius */
+    --radius-pill: 2.5rem;
+
+    /* Animation */
+    --transition: all .3s ease;
+
+}
+
+/* ============================
+        RESET
+============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* ============================
+        COMMON CLASSES
+============================ */
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.green-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-pill);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.green-btn:hover {
+    background-color: var(--primary-hover);
+    color: var(--white-color);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.section-subtitle {
+    color: var(--gray-color);
+    font-size: 1rem;
+}
+
+.text-green {
+    color: var(--primary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}

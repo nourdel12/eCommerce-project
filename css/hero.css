@@ -1,0 +1,69 @@
+/* ============================
+        HERO SECTION
+============================ */
+
+.hero {
+    padding: 1rem 0;
+}
+
+.hero-wrapper {
+    background: #edf2ee;
+    border-radius: .5rem;
+    padding: 4rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-subtitle {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+.hero-offer {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero-offer span {
+    color: #ff8a00;
+    font-weight: 700;
+}
+
+.hero-text {
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 85%;
+    margin-left: auto;
+}
+
+.hero-btn {
+    width: fit-content;
+}

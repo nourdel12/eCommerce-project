@@ -1,0 +1,66 @@
+/* ===========================
+        FEATURES SECTION
+=========================== */
+
+.features-section {
+    position: relative;
+    margin-top: -2rem;
+    z-index: 1;
+}
+
+.features-grid {
+    width: 92%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: var(--white-color);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.08);
+    overflow: hidden;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 1.5rem;
+    transition: background-color .3s ease;
+}
+
+.feature-card:hover {
+    background: #fafafa;
+}
+
+.feature-card:not(:last-child) {
+    border-right: 1px solid #E6E6E6;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.feature-content h4 {
+    margin-bottom: .25rem;
+
+    color: var(--dark-color);
+
+    font-size: .95rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.feature-content p {
+    color: var(--gray-color);
+
+    font-size: .8rem;
+    line-height: 1.5;
+}
