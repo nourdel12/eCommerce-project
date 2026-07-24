@@ -1,0 +1,157 @@
+/* ==========================================
+   TESTIMONIAL SECTION
+========================================== */
+
+.testimonial-section {
+    background-color: #EDF2EE;
+    padding: 6.25rem 0;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.testimonial-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3.125rem;
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1.5rem;
+
+    box-shadow: 0 0 .9375rem rgba(0, 0, 0, .06);
+
+    transition: .3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.quote-icon {
+    font-size: 2rem;
+    color: #84D187;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    color: #666;
+    font-size: .875rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.client-info img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-info h4 {
+    font-size: 1rem;
+    color: #1A1A1A;
+    margin-bottom: .25rem;
+}
+
+.client-info span {
+    color: #999;
+    font-size: .875rem;
+}
+
+/* ==========================================
+   RATING
+========================================== */
+
+.testimonial-rating {
+    display: flex;
+    gap: .1875rem;
+}
+
+.testimonial-rating i {
+    color: #FF8A00;
+    font-size: .875rem;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 991.98px) {
+
+    .testimonial-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .testimonial-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .testimonial-section {
+        padding: 4rem 0;
+    }
+
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+
+    .testimonial-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+}

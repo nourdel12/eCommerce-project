@@ -20,6 +20,9 @@
 
 .top-bar-right {
 
+       display: flex;
+    justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
 
 }
@@ -32,5 +35,31 @@
 .top-bar-right a:hover {
 
     color: var(--primary-color);
+
+}
+
+
+.auth-links{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+}
+/* ============================
+   TOP BAR RESPONSIVE
+============================ */
+
+@media (max-width: 767.98px) {
+
+    .top-bar-left {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: .75rem;
+    }
+
+    .top-bar-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
 
 }

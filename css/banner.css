@@ -107,3 +107,402 @@
 .shop-now-btn:hover i {
     transform: translateX(4px);
 }
+
+/* ==========================================
+   SALE CARDS
+========================================== */
+
+.sale-banner-section {
+    padding: 30px 0 80px;
+}
+
+.sale-banner-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+}
+
+.sale-card {
+
+    position: relative;
+
+    width: 424px;
+    height: 536px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+}
+
+.sale-card img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+/* ==========================================
+   SHARED CONTENT
+========================================== */
+
+.sale-content {
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: calc(100% - 56px);
+
+    padding: 0 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.sale-btn {
+    margin-top: auto;
+}
+
+
+.sale-label {
+
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+}
+
+.sale-title {
+
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    color: #FFFFFF;
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.0;
+
+}
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+.countdown {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 32px;
+
+}
+
+.time-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.time-box span {
+
+    color: #FFFFFF;
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+
+}
+
+.time-box small {
+
+    margin-top: 8px;
+
+    color: rgba(255, 255, 255, .85);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: .08em;
+
+}
+
+.separator {
+
+    margin-top: 2px;
+
+    color: rgba(255, 255, 255, .7);
+
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.sale-btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 32px;
+
+    border-radius: 43px;
+
+    background: #FFFFFF;
+
+    color: var(--primary-color);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+.sale-btn i {
+
+    transition: .3s ease;
+
+}
+
+.sale-btn:hover {
+
+    background: var(--primary-color);
+    color: #FFFFFF;
+
+}
+
+.sale-btn:hover i {
+
+    transform: translateX(5px);
+
+}
+
+/* ==========================================
+   SALE MONTH
+========================================== */
+
+/* Uses shared styles */
+
+/* ==========================================
+   LOW-FAT MEAT
+========================================== */
+
+.sale-price {
+
+    margin-bottom: 48px;
+
+    color: #FFFFFF;
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.sale-price .price {
+
+    color: #FF8A00;
+
+    font-weight: 600;
+
+}
+
+/* ==========================================
+   FRESH FRUIT
+========================================== */
+
+.sale-fruit .sale-label {
+
+    color: #1A1A1A;
+
+}
+
+.sale-fruit .sale-title {
+
+    color: #1A1A1A;
+
+}
+
+.discount-text {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 32px;
+
+    color: #1A1A1A;
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.discount-badge {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 5px;
+
+    background: #1A1A1A;
+
+    color: #FCC900;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 1199.98px) {
+
+    .sale-banner-section {
+        padding: 60px 0;
+    }
+
+    .sale-banner-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        justify-items: center;
+    }
+
+    .sale-card {
+        position: relative;
+
+        width: 100%;
+        max-width: 650px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    /* Keep the image but make it subtle */
+    .sale-card img {
+        opacity: .4;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .sale-content {
+        top: 50%;
+        left: 50%;
+
+        width: 100%;
+        height: auto;
+
+        padding: 0 40px;
+
+        transform: translate(-50%, -50%);
+
+        justify-content: center;
+    }
+
+    .sale-label {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .sale-title {
+        min-height: auto;
+
+        margin-bottom: 16px;
+
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+    /* Hide countdown on phones */
+    .countdown {
+        display: none;
+    }
+
+    .sale-price,
+    .discount-text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .discount-badge {
+        padding: 4px 10px;
+        font-size: 18px;
+    }
+
+    .sale-btn {
+        margin-top: 0;
+
+        padding: 14px 34px;
+
+        font-size: 15px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .sale-card {
+        height: 210px;
+    }
+
+    .sale-title {
+        font-size: 24px;
+    }
+
+    .sale-btn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+}

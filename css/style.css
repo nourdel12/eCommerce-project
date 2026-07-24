@@ -118,3 +118,95 @@ button {
 .w-100 {
     width: 100%;
 }
+/*toast notification*/
+
+.toast-notification{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    transform: translateX(120%);
+    transition: .35s ease;
+
+    z-index: 9999;
+}
+
+.toast-notification.show{
+    transform: translateX(0);
+}
+
+.toast-notification i{
+    color:#00B207;
+    font-size:24px;
+}
+
+.toast-title{
+    margin:0;
+    font-size:16px;
+    font-weight:600;
+}
+
+.toast-message{
+    margin:3px 0 0;
+    color:#777;
+    font-size:14px;
+}
+
+
+.quick-view-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,.6);
+
+    z-index: 999999;
+}
+
+.quick-view-overlay.active {
+    display: flex;
+}
+
+.quick-view-modal {
+    width: 850px;
+    max-width: 90vw;
+
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+
+    display: flex;
+    gap: 30px;
+
+    position: relative;
+}
+
+.quick-view-image img {
+    width: 300px;
+    height: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    font-size: 24px;
+    cursor: pointer;
+}
