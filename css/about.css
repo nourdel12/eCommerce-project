@@ -1,0 +1,114 @@
+:root{
+    --bs-secondary-color: gray;
+}
+hr{
+    border: solid black 2px;
+}
+/* global  */
+.lightgray{
+    background-color: #f6f4f4;
+}
+.darkgray{
+    background-color: #e9e7e7;
+}
+.bg-veg{
+    background-image: url(../images/about/Breadcrumbs.png);
+}
+/* custom  */
+.row span , p {
+    font-size: 12px;
+    color: gray;
+}
+.width32{
+    width: 32%;
+}
+.hight{
+    height: 200px;
+}
+
+.food-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color:#00B207 ;
+  background-color: #00B2071A;
+}
+.true-icon{
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color:#00B207 ;
+  background-color: #00B2071A;
+}
+.left-icon{
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color:black ;
+  background-color: white;
+}
+.right-icon{
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: green;
+  color: white;
+
+}
+.quote-icon{
+    font-size: 40px;
+    color:#2df733;
+}
+.cardd {
+    transition: transform 0.3s ease-in-out;
+}
+.cardd:hover {
+    transform: translate(-10px , -10px);
+}
+.client img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.logoo img {
+    width: 5rem;
+    height: 2rem;
+}
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+    .col-dirc{
+        flex-direction: column;
+    }
+    .width32{
+        width: 75%;
+        margin: 3% auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-dirc2{
+        flex-direction: column;
+    }
+    .vr{
+        display: none !important ;
+    }
+}
+
+

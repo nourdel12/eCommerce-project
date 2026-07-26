@@ -1,0 +1,16 @@
+:root{
+  --bs-success: #4CAF50;
+  --dark: #181818;
+  --bs-primary-bg-subtle: white ;
+}
+.bg-veg{
+    background-image: url(../images/about/Breadcrumbs.png);
+}
+.accordion-button:not(.collapsed) {
+    color: #186505;
+    background-color: white;
+}
+
+.accordion-button {
+    background-color: gainsboro;
+}
