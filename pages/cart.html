@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= Bootstrap ================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ================= Bootstrap Icons ================= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- ================= Google Fonts ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ================= Custom CSS ================= -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/top-bar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="stylesheet" href="../css/categories.css">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/instagram.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="../css/about.css">
+
+    <link rel="icon" href="../images/title/Group (1).png">
+    <title>
+
+        Shopery</title>
+</head>
+<!-- ======= Top Bar Start ======= -->
+
+<header class="site-header">
+
+    <div class="top-bar">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div
+                    class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start top-bar-left">
+                    <i class="bi bi-geo-alt"></i>
+
+                    <span>
+                        Store Location: Lincoln-344, Illinois, Chicago, USA
+                    </span>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-12 col-md-6">
+                    <!--Languages-->
+                    <div class="top-bar-right ">
+
+                        <div class="dropdown language-dropdown">
+
+                            <button class="dropdown-btn" type="button">
+                                <span class="selected-language">Eng</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li data-language="Eng">English</li>
+                                <li data-language="Ar">Arabic</li>
+                                <li data-language="Fr">French</li>
+                            </ul>
+
+                        </div>
+                        <!--cuurency-->
+                        <div class="dropdown currency-dropdown">
+
+                            <button class="dropdown-btn" type="button">
+                                <span class="selected-currency">USD</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+
+                                <li data-currency="USD">USD</li>
+                                <li data-currency="EUR">EUR</li>
+                                <li data-currency="EGP">EGP</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="auth-links">
+
+                            <a href="../pages/signin.html">Sign In</a>
+
+                            <span>/</span>
+
+                            <a href="../pages/signup.html">Sign Up</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ======= Top Bar End ======= -->
+
+    <!-- ===========================
+        MAIN HEADER
+=========================== -->
+
+    <div class="main-header">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-3">
+
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-12 text-center text-lg-start">
+
+                    <a href="../index.html" class="logo-link">
+                        <img src="../images/logo/logo.png" alt="Ecobazar Logo" class="logo img-fluid">
+                    </a>
+
+                </div>
+
+                <!-- Search -->
+                <div class="col-lg-6 col-md-12">
+
+                    <form class="search-form" id="searchForm">
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search">
+
+                            <button type="submit" class="btn search-btn">
+                                Search
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Icons -->
+                <div class="col-lg-3 col-md-12">
+
+                    <div class="header-icons">
+
+                        <div class="wishlist-icon">
+                            <a href="../pages/wishlist.html">
+                                <i class="bi bi-heart"></i>
+                            </a>
+
+                            <span class="wishlist-count">0</span>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="cart-icon">
+
+                            <a href="../pages/cart.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+
+                            <span class="cart-count">0</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ===========================
+        NAVBAR
+=========================== -->
+
+    <nav class="navbar-section">
+
+        <div class="container">
+
+            <div class="navbar-wrapper">
+
+                <!-- Left -->
+                <ul class="nav-links ">
+                    <li class="nav-item dropdown">
+
+                        <div class="nav-link-wrapper">
+
+                            <a href="../index.html" class="active">Home</a>
+
+                            <button class="dropdown-toggle-btn" type="button" aria-label="Open Home Menu">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav-dropdown-menu">
+
+                            <li><a href="#home">Hero</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#banner">Banner</a></li>
+                            <li><a href="#testimonial">Testimonials</a></li>
+                            <li><a href="#news">Latest News</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <div class="nav-link-wrapper">
+
+                            <a href="../pages/shop.html">Shop</a>
+
+                            <button class="dropdown-toggle-btn" type="button" aria-label="Open Shop Menu">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav-dropdown-menu">
+
+                            <li><a href="../pages/shop.html">Shop</a></li>
+                            <li><a href="../pages/shop-details.html">Shop Details</a></li>
+                            <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                            <li><a href="../pages/cart.html">Shopping Cart</a></li>
+                            <li><a href="../pages/checkout.html">Checkout</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <div class="nav-link-wrapper">
+
+                            <a href="javascript:void(0)">Pages</a>
+
+                            <button class="dropdown-toggle-btn" type="button" aria-label="Open Pages Menu">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav-dropdown-menu">
+
+                            <li><a href="../pages/about.html">About Us</a></li>
+                            <li><a href="../pages/contact.html">Contact Us</a></li>
+                            <li><a href="../pages/FAQ.html">FAQ</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+
+                        <div class="nav-link-wrapper">
+
+                            <a href="../pages/blog.html">Blog</a>
+
+                            <button class="dropdown-toggle-btn" type="button" aria-label="Open Blog Menu">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+
+                        </div>
+
+                        <ul class="nav-dropdown-menu">
+
+                            <li><a href="../pages/blog.html">Blog List</a></li>
+                            <li><a href="../pages/single-blog.html">Single Blog</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li><a href="../pages/about.html">About Us</a></li>
+
+                    <li><a href="../pages/contact.html">Contact Us</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="phone">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <span>(219) 555-0114</span>
+
+                </div>
+
+                <!-- Mobile -->
+
+                <button class="menu-btn" type="button" aria-label="Open Menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+<!--CONTENT-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+        <!-- Newsletter -->
+
+        <section class="newsletter">
+
+            <div class="container">
+
+                <div class="newsletter-content">
+
+                    <!-- Logo -->
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="../images/logo/logo.png" alt="Ecobazar Logo">
+
+                    </a>
+
+                    <!-- Newsletter Text -->
+
+                    <div class="newsletter-text">
+
+                        <h3>
+                            Subscribe our Newsletter
+                        </h3>
+
+                        <p>
+                            Pellentesque eu nibh eget mauris congue mattis mattis.
+                        </p>
+
+                    </div>
+
+                    <!-- Newsletter Form -->
+
+                    <form class="newsletter-form">
+
+                        <input type="email" placeholder="Your email address" required>
+
+                        <button type="submit">
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==========================================
+     FOOTER MAIN
+         ========================================== -->
+
+        <section class="footer-main">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- About -->
+
+                    <div class="footer-column">
+
+                        <h3 class="footer-heading">
+                            About Shopery
+                        </h3>
+
+                        <p class="footer-description">
+                            Morbi cursus porttitor enim lobortis molestie.
+                            Duis gravida turpis dui, eget bibendum magna congue nec.
+                        </p>
+
+                        <div class="footer-contact">
+
+                            <a href="tel:+2195550114">
+                                (219) 555-0114
+                            </a>
+
+                            <span>or</span>
+
+                            <a href="mailto:Proxy@gmail.com">
+                                Proxy@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- My Account -->
+
+                    <div class="footer-column">
+
+                        <h3 class="footer-heading">
+                            My Account
+                        </h3>
+
+                        <ul>
+
+                            <li><a href="../pages/dashboard.html">My Account</a></li>
+                            <li><a href="../pages/order.html">Order History</a></li>
+                            <li><a href="../pages/cart.html">Shopping Cart</a></li>
+                            <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                            <li><a href="../pages/settings.html">Settings</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Helps -->
+
+                    <div class="footer-column">
+
+                        <h3 class="footer-heading">
+                            Helps
+                        </h3>
+
+                        <ul>
+
+                            <li><a href="../pages/contact.html">Contact</a></li>
+                            <li><a href="../pages/FAQ.html">Faqs</a></li>
+                            <li><a href="../pages/terms.html">Terms &amp; Condition</a></li>
+                            <li><a href="../pages/privacy.html">Privacy Policy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Proxy -->
+
+                    <div class="footer-column">
+
+                        <h3 class="footer-heading">
+                            Proxy
+                        </h3>
+
+                        <ul>
+
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop.html">Product</a></li>
+                            <li><a href="shop.html">Products Details</a></li>
+                            <li><a href="#">Track Order</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Download App -->
+
+                    <div class="footer-column">
+
+                        <h3 class="footer-heading">
+                            Download our Mobile App
+                        </h3>
+
+                        <div class="app-buttons">
+
+                            <a href="#">
+                                <img src="../images/footer/app store.png" alt="App Store">
+                            </a>
+
+                            <a href="#">
+                                <img src="../images/footer/google play.png" alt="Google Play">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- ==========================================
+                 FOOTER BOTTOM
+            ========================================== -->
+
+        <section class="footer-bottom">
+
+            <div class="container">
+
+                <!-- Social -->
+
+                <div class="footer-social">
+
+                    <a href="#" class="active">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+                <!-- Copyright -->
+
+                <p class="copyright">
+                    Ecobazar eCommerce © 2021. All Rights Reserved
+                </p>
+
+                <!-- Payment -->
+
+                <div class="payment-methods">
+
+                    <img src="../images/footer/Method=ApplePay (1).png" alt="Apple Pay">
+
+                    <img src="../images/footer/Method=Visa.png" alt="Visa">
+
+                    <img src="../images/footer/Method=Discover (1).png" alt="Discover">
+
+                    <img src="../images/footer/Method=Mastercard.png" alt="Mastercard">
+
+                    <img src="../images/footer/Cart (1).png" alt="Secure Payment">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </footer>
