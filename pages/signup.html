@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../css/features.css">
     <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="../css/products.css">
+<link rel="stylesheet" href="../css/wishlist.css">
 
     <link rel="stylesheet" href="../css/auth.css">
 
@@ -103,7 +104,15 @@
 
                         </div>
 
+                        <div class="auth-links">
 
+                            <a href="../pages/signin.html">Sign In</a>
+
+                            <span>/</span>
+
+                            <a href="../pages/signup.html">Sign Up</a>
+
+                        </div>
 
                     </div>
 
@@ -136,7 +145,56 @@
 
                 </div>
 
+                <!-- Search -->
+                <div class="col-lg-6 col-md-12">
 
+                    <form class="search-form" id="searchForm">
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search">
+
+                            <button type="submit" class="btn search-btn">
+                                Search
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Icons -->
+                <div class="col-lg-3 col-md-12">
+
+                    <div class="header-icons">
+
+                        <div class="wishlist-icon">
+                            <a href="../pages/wishlist.html">
+                                <i class="bi bi-heart"></i>
+                            </a>
+
+                            <span class="wishlist-count">0</span>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="cart-icon">
+
+                            <a href="../pages/cart.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+
+                            <span class="cart-count">0</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -186,7 +244,7 @@
 
                         <div class="nav-link-wrapper">
 
-                            <a href="shop.html">Shop</a>
+                            <a href="../pages/shop.html">Shop</a>
 
                             <button class="dropdown-toggle-btn" type="button" aria-label="Open Shop Menu">
                                 <i class="bi bi-chevron-down"></i>
@@ -196,11 +254,11 @@
 
                         <ul class="nav-dropdown-menu">
 
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="shop-details.html">Shop Details</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="cart.html">Shopping Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="../pages/shop.html">Shop</a></li>
+                            <li><a href="../pages/shop-details.html">Shop Details</a></li>
+                            <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                            <li><a href="../pages/cart.html">Shopping Cart</a></li>
+                            <li><a href="../pages/checkout.html">Checkout</a></li>
 
                         </ul>
 
@@ -220,9 +278,9 @@
 
                         <ul class="nav-dropdown-menu">
 
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="../pages/about.html">About Us</a></li>
+                            <li><a href="../pages/contact.html">Contact Us</a></li>
+                            <li><a href="../pages/FAQ.html">FAQ</a></li>
 
                         </ul>
 
@@ -231,7 +289,7 @@
 
                         <div class="nav-link-wrapper">
 
-                            <a href="blog.html">Blog</a>
+                            <a href="../pages/blog.html">Blog</a>
 
                             <button class="dropdown-toggle-btn" type="button" aria-label="Open Blog Menu">
                                 <i class="bi bi-chevron-down"></i>
@@ -276,6 +334,18 @@
     </nav>
 </header>
 
+<section>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-veg py-4 ">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item text-secondary"><a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="breadcrumb-item active text-secondary" aria-current="page"><a href="../pages/dashboard.html"
+                        class="text-success">My account</a></li>
+            </ol>
+        </div>
+    </nav>
+</section>
 <body>
     <section class="auth-section">
 
