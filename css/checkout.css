@@ -1,0 +1,9 @@
+.bg-veg{
+    background-image: url(../images/about/Breadcrumbs.png);
+}
+:root{
+    --bs-secondary-color: gray;
+}
+.hightt{
+    height: 100px;
+}
