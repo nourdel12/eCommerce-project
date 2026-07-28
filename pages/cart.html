@@ -43,12 +43,14 @@
 
     <link rel="stylesheet" href="../css/about.css">
 
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="icon" href="../images/title/Group (1).png">
     <title>
 
         Shopery</title>
 </head>
-<!-- ======= Top Bar Start ======= -->
+<body>
+    <!-- ======= Top Bar Start ======= -->
 
 <header class="site-header">
 
@@ -345,6 +347,127 @@
 
 <!--CONTENT-->
 
+ <section>
+           <div  class="header">
+        <div class="container m-auto ">
+            <div class="">
+            <nav>
+  <ul class=" d-flex gap-2">
+    <li ><a href="index.html" class=" text-secondary">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-chevron-right mx-1"></i>
+    </a></li>
+   
+    <li class=" active text-success" aria-current="page">Cart
+      
+    </li>
+  </ul>
+</nav>
+        </div>
+        </div>
+    </div>
+   <div class="container m-auto p-5">
+      <div class="row g-5 mt-4">
+
+    <!-- Cart Table -->
+    <div class="  col-lg-8 border-cart p-3">
+
+      <div class="table-responsive">
+
+        <table class="table align-middle text-center cart-table">
+
+          <thead>
+            <tr>
+              <th class="text-start">PRODUCT</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>SUBTOTAL</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody id="trContainer">
+      
+            
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- Buttons -->
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mt-4">
+
+        <button  id="btnOrder" class="btn btn-light px-4 py-2">
+          <a href="shop.html">Return to shop</a>
+        </button>
+
+        <button class="btn btn-light px-4 py-2">
+          Update Cart
+        </button>
+
+      </div>
+
+      <!-- Coupon -->
+
+      <div class="row g-3 mt-5">
+
+       <div class="col-md-8">
+    <input
+      type="text"
+      id="couponInput"
+      class="form-control py-3"
+      placeholder="Enter code"
+    >
+    <small id="couponMessage" class="text-danger mt-1 d-block"></small>
+  </div>
+
+  <div class="col-md-4">
+    <button id="applyCoupon" class="btn btn-dark w-100 py-3">
+      Apply Coupon
+    </button>
+  </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Cart Total -->
+
+    <div class="col-lg-4">
+
+      <div class="border rounded-3 p-4">
+
+       <div class="d-flex justify-content-between border-bottom py-3">
+    <span>Subtotal</span>
+    <strong id="subTotal">$0</strong>
+</div>
+
+<div class="d-flex justify-content-between border-bottom py-3">
+    <span>Shipping</span>
+    <strong class="text-success">Free</strong>
+</div>
+
+<div class="d-flex justify-content-between py-3 mb-4">
+    <span class="fw-bold">Total</span>
+    <strong class="fs-5" id="total">$0</strong>
+</div>
+
+<button onclick="checkout()" class="btn btn-success rounded-pill w-100 py-3">
+    <a href="checkout" class="text-light">Proceed to checkout</a>
+</button>
+
+      </div>
+
+    </div>
+
+  </div>
+   </div>
+
+    </section>
 
 
 
@@ -591,3 +714,5 @@
 
 
     </footer>
+    <script src="../js/cartPage.js"></script>
+</body>

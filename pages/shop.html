@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../css/responsive.css">
 
     <link rel="stylesheet" href="../css/about.css">
-
+     <link rel="stylesheet" href="../css/shop.css">
     <link rel="icon" href="../images/title/Group (1).png">
     <title>
 
@@ -50,7 +50,8 @@
 </head>
 <!-- ======= Top Bar Start ======= -->
 
-<header class="site-header">
+<body>
+    <header class="site-header">
 
     <div class="top-bar">
 
@@ -339,22 +340,251 @@
 
 
 
-
-
-
-
 <!--CONTENT-->
 
+  <section class="container m-auto my-3">
+         <div  class="header mb-4">
+        <div class="container m-auto ">
+            <div class="">
+            <nav>
+  <ul class=" d-flex gap-2">
+    <li ><a href="index.html" class=" text-secondary">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-chevron-right mx-1"></i>
+    </a></li>
+     <li ><p class=" text-secondary fs-6">
+       Shop
+        <i class="fa-solid fa-chevron-right mx-1"></i>
+     </p></li>
+   
+    <li class=" active text-success" aria-current="page">Products
+      
+    </li>
+  </ul>
+</nav>
+        </div>
+        </div>
+    </div>
+
+        <div class="banner position-relative rounded-4 overflow-hidden">
+
+            <img src="../images/items/736ac341802327b2806c879e76b9b8612d16e984 - Copy.jpg.jpeg" alt="" class="w-100 h-100 object-fit-cover">
+
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+            <div class="content position-absolute top-50 start-0 translate-middle-y text-white ps-5">
+
+                <p class="text-uppercase fw-semibold mb-2">
+                    Best Deals
+                </p>
+
+                <h1 class="fw-bold mb-4">
+                    Sale of the Month
+                </h1>
+
+                <div class="counter d-flex gap-4">
+
+                 
+                       <div>
+                        <h3 id="days" class="text-success mb-0">00</h3>
+                        <small>DAYS</small>
+                    </div>
+
+                    <div>
+                        <h3 id="hours" class="text-success mb-0">02</h3>
+                        <small>HOURS</small>
+                    </div>
+
+                    <div>
+                        <h3  id="minutes" class="text-success mb-0">18</h3>
+                        <small>MINS</small>
+                    </div>
+
+                    <div>
+                        <h3  id="seconds" class="text-success mb-0">46</h3>
+                        <small>SECS</small>
+                    </div>
+                 
+
+                </div>
+
+                <button class="btn btn-success rounded-pill px-4 mt-4">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+
+            </div>
+
+            <div
+                class="discount position-absolute top-0 start-50 translate-middle-x mt-4  rounded-circle d-flex flex-column justify-content-center align-items-center">
+
+                <h4 class="fw-bold mb-0">56%</h4>
+                <small>OFF</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Product -->
+    <section class="container mb-5">
+      <!-- First Row -->
+    <div class="row align-items-center gy-3 my-3">
+
+        <!-- Left Filters -->
+        <div class="col-lg-8">
+
+            <div class="d-flex flex-wrap gap-3">
+
+  <select title="category"  name="category" id="category" class="form-select w-auto filter-select">
+                    
+  <option value="">all Category</option>
+
+  <option value="Fresh Fruit">Fresh Fruit</option>
+  <option value="Fresh Vegetables">Fresh Vegetables</option>
+  <option value="Meat & Fish">Meat & Fish</option>
+  <option value="Snacks">Snacks</option>
+  <option value="Beverages">Beverages</option>
+  <option value="Beauty & Health">Beauty & Health</option>
+  <option value="Bread & Bakery">Bread & Bakery</option>
+  <option value="Baking Needs">Baking Needs</option>
+  <option value="Cooking">Cooking</option>
+  <option value="Diabetic Food">Diabetic Food</option>
+  <option value="Dish Detergents">Dish Detergents</option>
+  <option value="Oil">Oil</option>
+
+                </select>
+
+                <select title="price"  name="price" id="price" class="form-select w-auto filter-select">
+                    <option selected>Select Price</option>
+                    <option>$0 - $100</option>
+                    <option>$100 - $500</option>
+                </select>
+
+                <select title="rating"  name="rating" id="rating" class="form-select w-auto filter-select">
+                    <option selected>Select Rating</option>
+                    <option>★★★★★</option>
+                    <option>★★★★☆</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="col-lg-4">
+
+            <div class="d-flex flex-wrap justify-content-lg-end gap-3">
+                   
+                <select title="sortTime" name="sortTime" id="sortTime" class="form-select w-auto filter-select">
+                    <option value="">Sort by: Latest</option>
+                    <option value="">Price</option>
+                    <option value="">Name</option>
+                </select>
+
+                <select title="show"  name="show" id="show" class="form-select w-auto filter-select">
+                    <option>Show: 16</option>
+                    <option>8</option>
+                    <option>24</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr> 
+
+    <!-- Second Row -->
+    <div  class="row  align-items-center gy-3 my-3">
+
+        <!-- Active Filters -->
+        <div class="col-lg-8">
+
+            <div class="d-flex flex-wrap align-items-center gap-2">
+
+                <span class="text-muted">Active Filters:</span>
+
+                <span class="badge rounded-pill bg-light text-dark px-3 py-2">
+                    Wing Chair
+                    <i class="fa-solid fa-xmark ms-2"></i>
+                </span>
+
+                <span class="badge rounded-pill bg-light text-dark px-3 py-2">
+                    Min $300 - Max $500
+                    <i class="fa-solid fa-xmark ms-2"></i>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Results -->
+        <div class="col-lg-4 text-lg-end my-4">
+
+            <span class="fw-semibold">30</span>
+            <span class="text-muted">Results found.</span>
+
+        </div>
+
+    </div>
+   
+
+
+
+        <div id="container-items" class="row">
+
+    
+    
+       
 
 
 
 
+      
+        </div>
+        
+             <div id="modal" class="my-modal">
 
+    <div class="my-modal-content">
 
+        <button type="button" id="closeModal" title="close" class="close-modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
+        <div id="modalBody" class="container-fluid p-0"></div>
 
+    </div>
 
+</div>
+    
+<div class="container my-5">
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 pagination-box">
 
+        <span class="arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+        </span>
+
+        <span class="page active">1</span>
+        <span class="page">2</span>
+        <span class="page">3</span>
+        <span class="page">4</span>
+        <span class="page">5</span>
+
+        <span class="dots">...</span>
+
+        <span class="page">21</span>
+
+        <span class="arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+
+    </div>
+</div>
+    </section>
 
 
 
@@ -591,3 +821,6 @@
 
 
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/shop.js"></script>
+</body>
