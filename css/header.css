@@ -27,19 +27,15 @@
     border-right: none;
 
 }
-
-.form-control {
-
-    border-left: none;
-    box-shadow: none;
-
+ 
+.search-form .form-control {
+  border-left: none;
+  box-shadow: none;
 }
 
-.form-control:focus {
-
-    box-shadow: none;
-    border-color: var(--border-color);
-
+.search-form .form-control:focus {
+  box-shadow: none;
+  border-color: var(--border-color);
 }
 
 .search-btn {
