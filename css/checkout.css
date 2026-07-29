@@ -7,3 +7,14 @@
 .hightt{
     height: 100px;
 }
+.form-control {
+    border-left: 1px solid gainsboro;
+    box-shadow: none;
+}
+.green{
+    background-color: #00B207;
+}
+.is-invalid {
+  border-color: #dc3545;
+  box-shadow: #dc3545;
+}

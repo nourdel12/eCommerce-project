@@ -4,7 +4,6 @@ const emptyWishlistMessage = document.getElementById("empty-wishlist");
 
 
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-
 function renderWishlistPage() {
     
     if (wishlist.length == 0) {

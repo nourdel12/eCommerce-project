@@ -326,6 +326,7 @@
 
     </nav>
 </header>
+<!-- ====================================================================================================================== -->
 
 <body>
     <section>
@@ -335,7 +336,7 @@
                     <li class="breadcrumb-item text-secondary"><a href="../index.html "><i
                                 class="fa-solid fa-house text-secondary"></i></a>
                     </li>
-                    <li class="breadcrumb-item active text-secondary" aria-current="page"><a href="#"
+                    <li class="breadcrumb-item active text-secondary" aria-current="page"><a href="../pages/cart.html"
                             class="text-secondary">Shopping Cart</a></li>
                     <li class="breadcrumb-item active text-secondary" aria-current="page"><a href="#"
                             class="text-success">checkout</a></li>
@@ -344,11 +345,11 @@
         </nav>
     </section>
     <div class="row container mx-auto">
-        <form class="row g-3 col-8">
+        <form class="row g-3 col-lg-8 col-12">
             <h3>Billing Information</h3>
             <div class="col-4">
                 <label for="inputFirstName" class="form-label">First name</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="Your first name">
+                <input type="text" class="form-control " id="inputFirstName" placeholder="Your first name">
             </div>
             <div class="col-4">
                 <label for="inputLastName" class="form-label">Last name</label>
@@ -404,13 +405,51 @@
                     placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
             </div>
         </form>
-        <div class="Order Summery col-4">
-
+        <div class="col-lg-4 col-12 border mt-4 rounded-4 p-3">
+            <h3>Order Summery</h3>
+            <div class="" id="OrderSummery">
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <h6>Subtotal:</h6>
+                <h6>84.99$</h6>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <h6>Shipping:</h6>
+                <h6>free</h6>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                <h5>total:</h5>
+                <h5>84.99$</h5>
+            </div>
+            <hr>
+            <h3>Payment Method</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                    Cash on Delivery
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    Pay Pall
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    Amazon Pay
+                </label>
+            </div>
+            <button class="green text-white w-100 rounded-pill px-3 py-2 mt-3">Place Order</button>
         </div>
     </div>
- 
 
-<footer>
+    <!-- ====================================================================================================================== -->
+    <footer>
 
         <!-- Newsletter -->
 
@@ -639,7 +678,7 @@
 
         </section>
 
-
+        <script src="../js/checkout.js"></script>
 
     </footer>
 </body>
