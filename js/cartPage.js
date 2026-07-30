@@ -3,7 +3,7 @@
  * */
 let orders = JSON.parse(localStorage.getItem("orders")) || [];
 const products = JSON.parse(localStorage.getItem('products')) ||[]
-const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartData = JSON.parse(localStorage.getItem('cart')) || [];
 
 /*
 Elemments
@@ -18,7 +18,7 @@ const validCoupons = ["SALE", "DISCOUNT", "WELCOME", "SAVE"];
 
 function cartProduct() {
 let cartoona=''
-if (cart.length == 0) {
+if (cartData.length == 0) {
 
     document.getElementById("trContainer").innerHTML = `
        <div class="w-100 my-2">
@@ -32,12 +32,12 @@ if (cart.length == 0) {
 
     return;
 }else{
- cartoona = cart.map(product => `
+ cartoona = cartData.map(product => `
         <tr>
             <td class="text-start">
                 <div class="d-flex align-items-center gap-3">
-                    <img src="${product.image}" alt="${product.name}" class='img-cart'>
-                    <span>${product.name}</span>
+                    <img src="${product.image}" alt="${product.title}" class='img-cart'>
+                    <span>${product.title}</span>
                 </div>
             </td>
 
@@ -53,7 +53,7 @@ if (cart.length == 0) {
 </div>
             </td>
 
-            <td class="fw-bold">$${product.totalPrice}</td>
+            <td class="fw-bold">$${(product.price*product.quantity)}</td>
 
             <td>
                <button class="btn p-0 text-secondary" onclick="deleteProduct(${product.id})">
@@ -74,12 +74,12 @@ function cartTotal() {
 
     let total = 0;
 
-    cart.forEach(product => {
-        total += product.price * product.quantity;
+   cartData.forEach(product => {
+        total += (product.price * product.quantity);
     });
 
-    document.getElementById("subTotal").innerHTML = `$${total}`;
-    document.getElementById("total").innerHTML = `$${total}`;
+    document.getElementById("subTotal").innerHTML = `$${total.toFixed(2)}`;
+    document.getElementById("total").innerHTML = `$${total.toFixed(2)}`;
 }
 
 
@@ -88,9 +88,9 @@ function checkout() {
 
     let order = {
         id: Date.now(),
-        products: cart.map(product => ({
+        products: cartData.map(product => ({
             id: product.id,
-            name: product.name,
+           title: product.title,
             price: product.price,
             quantity: product.quantity
         }))
@@ -104,13 +104,13 @@ function checkout() {
 //  function Delete Product
 function deleteProduct(id) {
 
-    let index = cart.findIndex(product => product.id === id);
+    let index = cartData.findIndex(product => product.id == id);
 
     if (index !== -1) {
-        cart.splice(index, 1);
+        cartData.splice(index, 1);
     }
 
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cartData));
 
     cartProduct();
     cartTotal();
@@ -119,28 +119,29 @@ function deleteProduct(id) {
 
 //  function quantity
 function increaseQuantity(id) {
-
-    let product = cart.find(item => item.id === id);
+    
+console.log(id);
+    let product = cartData.find(item => item.id == id);
 
     if (product) {
         product.quantity++;
-        product.totalPrice = product.price * product.quantity;
-
-        localStorage.setItem("cart", JSON.stringify(cart));
+        
+        localStorage.setItem("cart", JSON.stringify(cartData));
 
         cartProduct();
         cartTotal();
     }
 }
 function decreaseQuantity(id) {
-
-    let product = cart.find(item => item.id === id);
+console.log(cartData);
+console.log(id);
+    let product = cartData.find(item => item.id == id);
 
     if (product && product.quantity > 1) {
         product.quantity--;
         product.totalPrice = product.price * product.quantity;
 
-        localStorage.setItem("cart", JSON.stringify(cart));
+        localStorage.setItem("cart", JSON.stringify(cartData));
 
         cartProduct();
         cartTotal();

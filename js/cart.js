@@ -68,10 +68,13 @@ function addToCart(productCard) {
         .textContent
         .trim();
 
-    const price = productCard
+   const price = parseFloat(
+    productCard
         .querySelector(".product-price, .price")
         .textContent
-        .trim();
+        .replace("$", "")
+        .trim()
+);
 
     const image = productCard.querySelector("img").src;
 

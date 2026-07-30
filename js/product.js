@@ -1,13 +1,12 @@
 const items = JSON.parse(localStorage.getItem('products')) ||[]
 const parms = new URLSearchParams(window.location.search)
 const id =Number(parms.get('id'))
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+let wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
  
 //  function showModel
 function openModel(id){
      const product =items.find(item => item.id === id);
-     let isFavourite = wishlist.some(item => item.id === product.id);
-   let model=`
+       let model=`
      
 
       <div class="modal-body">
@@ -167,7 +166,7 @@ function openModel(id){
 
     <button id='wishlistBtn' class="btn btn-light rounded-circle">
 
-        <i class="fa-solid fa-heart ${isFavourite?'text-danger' :''}"></i>
+        <i class="fa-solid fa-heart '}"></i>
 
     </button>
 
@@ -216,8 +215,7 @@ let wishlistBtn = document.getElementById('wishlistBtn')
 slider()
 cartActions(product)
 wishlistBtn.addEventListener("click", function () {
-    toggleWishlist(product);
-     openModel(id)
+    toggleWishlist2(product.id);
 });
 }
 
@@ -251,7 +249,7 @@ function cartActions(product) {
 
         let order = {
             id: product.id,
-            name: product.name,
+            title: product.name,
             image: product.image,
             price: product.price,
             quantity: quantity,
@@ -287,48 +285,28 @@ function slider() {
     });
 }
 
-// function Wishlist
-function toggleWishlist(product) {
+function updateWishlistCount() {
+    const wishlistCount = document.querySelector(".wishlist-count");
+    const wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-    let index = wishlist.findIndex(item => item.id === product.id);
-
-    if (index !== -1) {
-
-        
-        wishlist.splice(index, 1);
-
-        alert("Removed from Wishlist");
-
-    } else {
-
-        wishlist.push({
-    id: product.id,
-    name: product.name,
-    image: product.image,
-    price: product.price
-});
-
-        alert("Added to Wishlist");
-
-    }
-
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
-
+    wishlistCount.textContent = wishlistData.length;
 }
+
+// function Wishlist
 function toggleWishlist2(id) {
 
     let product = products.find(item => item.id === id);
 
-    let index = wishlist.findIndex(item => item.id === id);
+    let index = wishlistData.findIndex(item => item.id === id);
 
     if (index !== -1) {
-        wishlist.splice(index, 1);
+        wishlistData.splice(index, 1);
         alert('Removed from Wishlist')
-
+       
     } else {
-   wishlist.push({
+  wishlistData.push({
             id: product.id,
-            name: product.name,
+           title: product.name,
             image: product.image,
             price: product.price
         });
@@ -336,13 +314,16 @@ alert('add Wishlist')
 
     }
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
-
+    localStorage.setItem("wishlist", JSON.stringify(wishlistData));
+   
     showProducts(products);
-    openModel(id);
+    
+    updateWishlistCount()
   
 
 }
+
+
 
 
 // function Products
