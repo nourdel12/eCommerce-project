@@ -19,25 +19,20 @@ if (signinForm) {
         const users = getUsers();
 
         const user = users.find(user =>
-
             user.email === email &&
             user.password === password
-
         );
 
         if (!user) {
-
             alert("Invalid email or password.");
-
             return;
-
         }
 
         setCurrentUser(user);
 
         alert("Login successful!");
 
-        window.location.href = "../index.html";
+        window.location.href = "dashboard.html";
 
     });
 
